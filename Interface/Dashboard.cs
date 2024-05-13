@@ -16,5 +16,19 @@ namespace project_pbo.Interface
         {
             InitializeComponent();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void sumberBtn_Click(object sender, EventArgs e)
+        {
+            SumberDana sumberDana = new SumberDana();
+
+            sumberDana.TopLevel = false;
+            contentPnl.Controls.Clear();
+            contentPnl.Controls.Add(sumberDana);
+            sumberDana.Show();
+        }
     }
 }
