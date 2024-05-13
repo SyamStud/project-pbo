@@ -6,6 +6,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using MySql.Data.MySqlClient;
+using static System.Windows.Forms.LinkLabel;
+using System.Drawing;
 
 namespace project_pbo.Configuration
 {
@@ -15,7 +17,7 @@ namespace project_pbo.Configuration
         private MySqlCommand cmd;
         private MySqlDataAdapter adapter;
 
-        private string link = "server=localhost;port=3306;database=project-pbo;uid=root;pwd=;";
+        private string link = "server=localhost;port=3306;database=project_pbo;uid=root;pwd=;";
 
         public ConnectionCls()
         {
